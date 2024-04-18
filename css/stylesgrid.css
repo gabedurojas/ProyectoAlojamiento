@@ -1,0 +1,26 @@
+.containergrid{
+ /* background-color: whitesmoke; */
+ padding: 20px;
+
+ display: grid;
+
+ grid-template-columns: repeat(3, 1fr);
+
+ column-gap: 10px;
+
+ row-gap: 10px;
+
+ gap: 10px;
+}
+
+.box{
+/* background-color: white; */
+color: black;
+font-weight: bold;
+font-size: 1vw;  
+/* align-items:center;  */
+text-align: center;
+padding: 10px;
+text-align: center;
+/* border: 1px dotted black; */
+}
