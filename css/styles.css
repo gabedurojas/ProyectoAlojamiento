@@ -48,7 +48,7 @@ section {
 } 
 
 h2{
-    color: black;
+    color: blue;
     font-weight: bold;
     font-size: 2vw;  
     text-align: center;
@@ -59,7 +59,7 @@ body{
     margin: 0;
     padding: 0;
     /* background-color: blue; */
-    background-image: url("../Img/PH02074U.BMP");
+    /* background-image: url("../Img/PH02074U.BMP"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
