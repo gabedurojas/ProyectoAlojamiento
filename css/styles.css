@@ -132,8 +132,8 @@ align-items: center;
 }
 
 #banner{
-    /* background-image: url('../img/PH02074U.BMP'); */ */
-    background-size: cover;
+    /* background-image: url('../img/PH02074U.BMP'); */
+    background-size: cover;   /* esta es la linea 136 */
     background-position: center;
     height: 200px;
     box-shadow: inset 0 0 0 2000px rgba(84, 84,84, 0.5);
@@ -370,6 +370,62 @@ align-items: center;
 
 .movie-item-detail-subtitle-v2::after{
     content: '🌟';
+}
+
+.propietario-card {
+    width: 200px; /* Ancho de la tarjeta */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Alinear contenido al centro */
+    margin: 20px; /* Margen exterior */
+    display: inline-block; /* Mostrar en línea */
+}
+
+.propietario-card img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 50%; /* Hacer la imagen circular */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+main {
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si el espacio es insuficiente */
+}
+
+
+.propietario-card {
+    position: relative;
+    width: 280px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Transición del color de fondo */
+}
+
+.propietario-card:hover {
+    background-color: #333;
+}
+
+.propietario-card:hover h2 {
+    color: rgb(157, 255, 0); /* Cambiamos el color del nombre al pasar el cursor */
+}
+
+.propietario-card:hover p {
+    color: white; /* Cambiamos el color del texto al pasar el cursor */
+}
+
+#ubicacion-heading h2 {
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Añadimos sombra al texto */
 }
 
 /*media query para las dispositivos*/
