@@ -4,50 +4,64 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./Img/iconos/house.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./css/stylesheader.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/index.js"></script>
+
     <title>Acerca De..</title>
 </head>
 <body>
-    <header>
-      <div id="logo">
-         <a href=""><img src="./Img/iconos/house.ico" alt=""><span>Alojamiento Los Paraísos</span></a>
-     </div>
-     <h1></h1>
-     <nav>
-         <ul>
-             <li>
-               <a href="index.html"><img src="./Img/iconos/home.ico" alt=""><span>Inicio</span></a>
-             </li>
-             <li>
-               <a href="acerca_de.html"><img src="./Img/iconos/group_key.ico" alt=""><span>Sobre Nosotros</span></a>                     
-             </li>
-             <li>
-               <a href="habitaciones.html"><img src="./Img/iconos/house.ico" alt=""><span>Habitaciones</span></a>
-             </li>
-             <li>
-               <a href="propietarios.html"><img src="./Img/iconos/user_suit.ico" alt=""><span>Propietarios</span></a>                    
-             </li>
-             <li>
-              <a href="franquicia.html"><img src="./Img/iconos/key_go.ico" alt=""><span>Abrir Franquicias</span></a>
-             </li>
-             <li>
-               <a href="sucursales.html"><img src="./Img/iconos/flag_blue.ico" alt=""><span>Nuestras Sucusales</span></a>
-             </li>
-             <li>
-               <a href="contacto.html"><img src="./Img/iconos/email_edit.ico" alt=""><span>Contacto</span></a>
-             </li>
-             <link rel="stylesheet" href="css/styles.css">
-         </ul>
+    <header class="header1">
+      <nav class="nav">
+        <!-- <img class="logoimagen1" src="./Img/1248193915_jabber_serv_on.png" alt=""> -->
+         <a href="" class="logo1 nav-link">Los Paraisos</a>
+         <img class="nav-toggle"  src="./Img/application_double.ico" alt="">
+        <ul class="nav-menu nav-menu_visible">
+            <li class="nav-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html" class="nav-menu-link nav-link">Inicio</a> </li>
+            <li class="nav-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="acerca_de.html" class="nav-menu-link nav-link">Sobre Nosotros</a> </li>
+            <li class="nav-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html" class="nav-menu-link nav-link">Habitaciones</a></li>
+            <li class="nav-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html" class="nav-menu-link nav-link">Propietarios</a></li>
+            <li class="nav-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html" class="nav-menu-link nav-link">Nueva Franquicia</a></li>
+            <li class="nav-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html" class="nav-menu-link nav-link">Sucursales</a></li>
+            <li class="nav-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+        </ul>
      </nav>
     </header>
 
-    <!-- <section id="banner">
-        <div class="container card-banner">
-          <h1>Películas y series ilimitadas y mucho más</h1>
-          <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
-          <a href="" class="btn-cac">Registrate</a>
-        </div>
-    </section> -->
+    <!-- id="banner2"  -->
+    <section id="habitaciones-heading">
+      <div>
+        <h2>EMPRESAS QUE CONFIAN EN NOSOTROS</h2>
+      </div> 
+    </section>
+  
+     <section id="bannercarruel">
+       <div>
+         <div class="swiffy-slider">
+           <ul class="slider-container">
+              <li><img src="./Img/naranja.png" style="max-width: 100%;height: auto;"></li>
+              <li><img src="./Img/banconacion.png" style="max-width: 100%;height: auto;"></li>
+              <li><img src="./Img/galicia.png" style="max-width: 100%;height: auto;"></li>
+              <li><img src="./Img/mercadolibre.jpg" style="max-width: 100%;height: auto;"></li>
+           </ul>
+      
+           <button type="button" class="slider-nav"></button>
+           <button type="button" class="slider-nav slider-nav-next"></button>
+      
+           <div class="slider-indicators">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+           </div>
+          </div>
+       </div>
+     </section>
 
     <section id="ubicacion">
       <div>
