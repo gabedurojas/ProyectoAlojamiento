@@ -27,7 +27,7 @@
     justify-content: space-between;
 
     /* max-width: 1200px; */
-    margin: 0 auto;
+    margin: 50 auto;
 }
 
 .nav-link{
@@ -51,7 +51,7 @@
 .nav-menu-item{
     font-size: 15px;
     font-weight: bold;
-    margin: 0 3px;
+    margin: 20 3px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
