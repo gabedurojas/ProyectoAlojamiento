@@ -1,8 +1,8 @@
-const navToggle =  document.querySelector(".nav-toggle")
-const navMenu = document.querySelector(".nav-menu")
+const navToggle =  document.querySelector(".nav1-toggle")
+const navMenu = document.querySelector(".nav1-menu")
 
 navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu_visible");
+    navMenu.classList.toggle("nav1-menu_visible");
 });
 
 // funcionalidad de desplazar hacia arriba
