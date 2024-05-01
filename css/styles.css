@@ -25,6 +25,7 @@ header {
     top: 0;
     left: 0;
     border-radius: 15px;
+    z-index: 9999;
 }
 
 nav ul {
@@ -281,6 +282,139 @@ align-items: center;
 }
 
 /*  C L A S E S */
+/*clase para el navegador*/
+.header1{
+    background-color: blue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+.logoimagen1{
+      /* position: fixed; */
+      padding: 0px;
+      /* line-height: 15px;  */
+      height: 55px;
+      width: 65px;   
+}
+  
+.nav1{
+      display: flex;
+      justify-content: space-between;
+  
+      /* max-width: 1200px; */
+      margin: 50 auto;
+}
+  
+.nav1-link{
+      color: white;
+      text-decoration: none;
+}
+  
+.logo1{
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 8px;
+      line-height: 80px;
+}
+  
+.nav1-menu{
+      display: flex;
+      margin-right: 20px;
+      list-style: none;
+}
+  
+.nav1-menu-item{
+      font-size: 15px;
+      font-weight: bold;
+      margin: 20 3px;
+      line-height: 80px;
+      text-transform: uppercase;
+      width: max-content;
+}
+  
+.nav1-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
+  
+}
+  
+.nav1-menu-link:hover,
+  .nav1-menu-link_active{
+      background-color: #034574;
+      transition: 0.5s;  
+}
+  
+.nav1-toggle{
+       cursor: pointer;
+       color: white;
+       border: none;
+       font-size: 20px;
+       padding: 0 20px;
+       line-height: 60px;
+       display: none;
+}
+  
+  @media (max-width: 768px) {
+      body{
+          padding-top: 70px;
+      }
+  
+      .header1{
+          height: 60px;
+      }
+  
+      .logo1{
+          font-size: 20px;
+          padding: 0 20px;
+          line-height: 40px;
+      }
+  
+      .nav1-menu{
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+          background-color: blue;
+          position: fixed;
+          font-size: 10px;
+          left: 0;
+          top: 60px;
+          width: 100%;
+          padding: 10px 0;
+          height: calc(100% - 60px);
+          overflow-y: auto;
+          left: 100%;
+          transition: left 1.5s;
+      }
+  
+      .nav1-menu-item{
+          line-height: 50px;
+      }
+  
+      .nav1-menu-link:hover,
+      .nav1-menu-link_active {
+          background: none;
+          color:black;
+      }
+  
+      .nav1-toggle{
+          display: block;
+      }
+  
+      .nav1-menu_visible{
+          left: 0;
+      }
+  
+      .logoimagen1{
+          padding: 0px;
+          /* line-height: 15px;  */
+          height: 45px;
+          width: 45px;   
+      }
+  
+  }
 
 .propietario {
     width: 300px;
@@ -758,8 +892,62 @@ align-items: center;
     }     
 }
 
+
+/*contenedor de imagenes*/
+.containergrid{
+    background-color: whitesmoke; 
+   
+    padding: 20px;
+   
+    border-radius: 15px;
+   
+    /* display: grid; */
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+   
+    column-gap: 10px;
+   
+    row-gap: 10px;
+   
+    gap: 10px;
+   }
+   
+   .box{
+    background-color: white; 
+   color: black;
+   /* position: absolute; */
+   font-weight: bold;
+   font-size: 1vw;  
+   /* align-items:center;  */
+   text-align: center;
+   padding: 10px;
+   text-align: center;
+   /* border: 1px dotted black;  */
+   }
+   
+   @media screen and (min-width: 768px) and (max-width: 1023px) {
+       .containergrid{
+           background-color: whitesmoke; 
+          
+           padding: 10px;
+          
+           /* display: grid; */
+           display: grid;
+          
+           grid-template-columns: repeat(1, 1fr);
+          
+           column-gap: 5px;
+          
+           row-gap: 5px;
+          
+           gap: 5px;
+          }
+   }
+   
+
 /* formulario de contacto */
-#fs-frm input,
+ #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm fieldset,
@@ -789,7 +977,7 @@ align-items: center;
   align-items: baseline;
 }
 
-/* border, padding, margin, width */
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -849,7 +1037,6 @@ align-items: center;
   appearance: radio;
 }
 
-/* address, locale */
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"],
 #fs-frm fieldset.locale input[name="postal-code"] {
@@ -865,7 +1052,7 @@ align-items: center;
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
-}
+} 
 
 /****/
 

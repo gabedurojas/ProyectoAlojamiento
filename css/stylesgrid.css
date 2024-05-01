@@ -1,26 +1,21 @@
-#ubicacion-heading {
+/* #ubicacion-heading {
     background-color: #6495ED;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px;
     text-align: center;
-    /* display: inline-block; */
-    animation: changeColor 10s infinite; /* Cambiamos la duración a 10 segundos y hacemos la animación infinita */
-    overflow: hidden; /* Para evitar que el texto se desenfoque */
-   /*padding: 10px 20px; /* Espaciado interno */
-   /*margin: 0px auto; /* Margen y centrado horizontal */
-   /* margin: 20px;
-   /* text-align: center; /* Alinear texto al centro */
-    /*overflow: hidden; /* Para evitar que el texto se desenfoque */
-    /*max-width: 80%; /* Ancho máximo del contenedor */
-    /*color: white; /* Color del texto */
-}
+     display: inline-block;
+    animation: changeColor 10s infinite; 
+    overflow: hidden; 
+} */
 
 
 .containergrid{
- /* background-color: whitesmoke; */
+ background-color: whitesmoke; 
 
  padding: 20px;
+
+ border-radius: 15px;
 
  /* display: grid; */
  display: grid;
@@ -35,20 +30,21 @@
 }
 
 .box{
-/* background-color: white; */
+ background-color: white; 
 color: black;
+/* position: absolute; */
 font-weight: bold;
 font-size: 1vw;  
 /* align-items:center;  */
 text-align: center;
 padding: 10px;
 text-align: center;
-/* border: 1px dotted black; */
+/* border: 1px dotted black;  */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .containergrid{
-        /* background-color: whitesmoke; */
+        background-color: whitesmoke; 
        
         padding: 10px;
        

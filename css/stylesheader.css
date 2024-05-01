@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
 }
 
+/*clase para el navegador*/
 .header1{
   background-color: blue;
   height: 80px;
@@ -22,7 +23,7 @@
     width: 65px;   
 }
 
-.nav{
+.nav1{
     display: flex;
     justify-content: space-between;
 
@@ -30,7 +31,7 @@
     margin: 50 auto;
 }
 
-.nav-link{
+.nav1-link{
     color: white;
     text-decoration: none;
 }
@@ -42,13 +43,13 @@
     line-height: 80px;
 }
 
-.nav-menu{
+.nav1-menu{
     display: flex;
     margin-right: 20px;
     list-style: none;
 }
 
-.nav-menu-item{
+.nav1-menu-item{
     font-size: 15px;
     font-weight: bold;
     margin: 20 3px;
@@ -57,19 +58,19 @@
     width: max-content;
 }
 
-.nav-menu-link{
+.nav1-menu-link{
 padding: 8px 12px;
 border-radius: 3px;
 
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active{
+.nav1-menu-link:hover,
+.nav1-menu-link_active{
     background-color: #034574;
     transition: 0.5s;  
 }
 
-.nav-toggle{
+.nav1-toggle{
      cursor: pointer;
      color: white;
      border: none;
@@ -94,7 +95,7 @@ border-radius: 3px;
         line-height: 40px;
     }
 
-    .nav-menu{
+    .nav1-menu{
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
@@ -111,21 +112,21 @@ border-radius: 3px;
         transition: left 1.5s;
     }
 
-    .nav-menu-item{
+    .nav1-menu-item{
         line-height: 50px;
     }
 
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
+    .nav1-menu-link:hover,
+    .nav1-menu-link_active {
         background: none;
         color:black;
     }
 
-    .nav-toggle{
+    .nav1-toggle{
         display: block;
     }
 
-    .nav-menu_visible{
+    .nav1-menu_visible{
         left: 0;
     }
 
