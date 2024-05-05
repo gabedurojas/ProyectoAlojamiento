@@ -1,72 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./Img/iconos/house.ico" />
-    <title>Ubicacion1</title>
+    <title>Hotel De Turismo</title>
     <!-- <link rel="stylesheet" href="./css/stylesheader.css"> -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <script defer src="./js/index.js"></script>
-</head>
-<body>
-  <header class="header1">
-    <nav class="nav1">
-      <!-- <img class="logoimagen1" src="./Img/1248193915_jabber_serv_on.png" alt=""> -->
-       <a href="" class="logo1 nav1-link"></a>
-       <img class="nav1-toggle"  src="./Img/application_double.ico" alt="">
-      <ul class="nav1-menu nav1-menu_visible">
-          <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html" class="nav1-menu-link nav1-link">Inicio</a> </li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="acerca_de.html" class="nav1-menu-link nav1-link">Sobre Nosotros</a> </li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html" class="nav1-menu-link nav1-link">Habitaciones</a></li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html" class="nav1-menu-link nav1-link">Propietarios</a></li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html" class="nav1-menu-link nav1-link">Nueva Franquicia</a></li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html" class="nav1-menu-link nav1-link">Sucursales</a></li>
-          <li class="nav1-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html" class="nav1-menu-link nav1-link nav1-menu-link_active">Contacto</a></li>
-      </ul>
-   </nav>
-  </header>
 
-    <section id="ubicacion">
+    <!-- Animaciones del tecto-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header1">
+      <nav class="nav1">
+        <a href="" class="logo1 nav1-link"></a>
+        <img class="nav1-toggle" src="./Img/application_double.ico" alt="" />
+        <ul class="nav1-menu nav1-menu_visible">
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/home.ico" alt="" /><a
+              href="index.html"
+              class="nav1-menu-link nav1-link"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/group_key.ico" alt="" /><a
+              href="acerca_de.html"
+              class="nav1-menu-link nav1-link"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/house.ico" alt="" /><a
+              href="habitaciones.html"
+              class="nav1-menu-link nav1-link"
+              >Habitaciones</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/user_suit.ico" alt="" /><a
+              href="propietarios.html"
+              class="nav1-menu-link nav1-link"
+              >Propietarios</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/key_go.ico" alt="" /><a
+              href="franquicia.html"
+              class="nav1-menu-link nav1-link"
+              >Nueva Franquicia</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/flag_blue.ico" alt="" /><a
+              href="sucursales.html"
+              class="nav1-menu-link nav1-link"
+              >Sucursales</a
+            >
+          </li>
+          <li class="nav1-menu-item">
+            <img src="./Img/iconos/email_edit.ico" alt="" /><a
+              href="contacto.html"
+              class="nav1-menu-link nav1-link nav1-menu-link_active"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+           <!-- icono de volver arriba -->
+           <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+           ><img
+             src="./Img/volver2.bmp"
+             class="socicon up-arrow"
+             alt="desplazarse-hacia-arriba"
+           /></i>
+    
+
+    <section id="bannerubicaciones" >
+      <section class="hero">
         <div>
+          <div class="bio animate__animated animate__shakeX propietario1">
+            <h2 class="bio-titulo">
+              Hotel Internacional de Turismo
+            </h2>
+            <h2 class="bio-titulo">
+              Formosa (Cap.)
+            </h2>
+            <p>
+              Los departamentos están ubicados en un exclusivo complejo de 3
+              torres con todas las comodidades incluidas.En este lugar podrás
+              disfrutar de piscina, gimnasio, play room, club house y amplios
+              espacios verdes.El complejo se encuentra ubicado estratégicamente
+              a 5 minutos del centro de la ciudad. 
+            </p>
+            <p> Contamos con departamentos temporarios amoblados y totalmente equipados para
+                alquilar por día, semanal, mensual o el tiempo que quieras. Todos
+                los departamentos son exteriores con balcón propio, wifi
+                individual de alta velocidad y televisión por cable.
+            </p>
           <hr>
-          <h2>Gran Hotel de Turismo - Formosa - Capital</h2>
-          <hr>
+            <br />
+            <p>Teléfono:<span>+54 3704 555555</span></p>
+          </div>
         </div>
-        <br>
-        <div>
-          <p>Un complejo edilicio de gran magnitud, con 3 torres en funcionamiento  que suman más de 325 departamentos, incorporando a su vez, amplios espacios verdes, equipamientos de uso común, una torre particular de oficinas corporativas, locales comerciales y espectaculares amenities.
-            Está ubicado estratégicamente cerca del centro de la ciudad, a unos metros del Río Pilcomayo   y de fácil acceso con las rutas de entrada y salida de la ciudad</p>
-        </div>
-        <div>
-          <p>Apostamos a la capacitación y actualización de nuestro personal, por eso es que contamos con un equipo de profesionales con sólida formación que trabajan constantemente para lograr nuestro mayor objetivo que es la satisfacción de nuestros clientes ofreciendo un servicio de calidad. </p>
-        </div>
-        <div class="mapa-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3446.286995958968!2d-57.62520504205016!3d-30.257402957074543!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE1JzI1LjgiUyA1N8KwMzcnMjkuMCJX!5e0!3m2!1ses-419!2sar!4v1712711760420!5m2!1ses-419!2sar" width="600" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="./Img/fsa01.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./Img/fsa02.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./Img/fsa03.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./Img/fsa04.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./Img/fsa05.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./Img/fsa06.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
+    </section>
 
+    <section>
+      <br />
+      <hr />
+      <h2>RESERVA AHORA..</h2>
+      <div>
+        <p>RÁPIDO, FÁCIL Y SEGURO</p>
+        <ul>
+          <li>Check in 14:00 a 18:00 hs</li>
+          <li>Check out 08:30 a 10:00 hs</li>
+          <li>Cochera a pedido + costo (segun disponibilidad)</li>
+        </ul>
+      </div>
+      <hr />
+    </section>
+
+    <br />
+    <hr />
+    <h2>TIPOS DE HABITACIONES</h2>
+    <hr />
+
+    <section style="text-align: center; padding-left: 15%; padding-right: 15%">
+      <h1>Totalmente Equipados</h1>
+      <br />
+      <p>
+        COMPLEJO DE DEPARTAMENTOS,temporarios de 1 y 2 dormitorios equipados con
+        muebles y electrodomésticos de alta calidad. Aqui encontrarás aire
+        acondicionado, wifi, Smart TV LCD, cocina con vajilla, menaje, y
+        electrodomésticos de última tecnología.
+      </p>
+      <p>
+        El complejo cuenta con terraza verde, pileta con reposeras y asadores con unas vistas privilegiadas a la ciudad, cocheras con costo y gimnasio a pocos metros
+      </p>
+
+    </section>
+
+    <section id="propietario">
+      <div class="propietario">
+        <img src="Img/img2.jpg" alt="Propietario1" />
+        <div class="contenido">
+          <h3>Premium 2 Habitaciones</h3>
+          <p>
+            Departamentos premium de 2 habitaciones con ambientes cálidos y
+            amplios. Completamente amoblado y equipado con electrodomésticos de
+            acero inoxidable.
+          </p>
+        </div>
+      </div>
+
+      <div class="propietario">
+        <img src="Img/img6.jpg" alt="Propietario2" />
+        <div class="contenido">
+          <h3>Premium 1 Habitación</h3>
+          <p>
+            Departamentos premium de 1 habitación con balcón que le regala a
+            cada uno de nuestros huéspedes excelentes panorámicas de la ciudad
+          </p>
+        </div>
+      </div>
+
+      <div class="propietario">
+        <img src="Img/img3.jpg" alt="Propietario3" />
+        <div class="contenido">
+          <h3>Estándar 2 Habitaciones</h3>
+          <p>
+            Departamentos estándar de 2 habitaciones con ambientes amplios y
+            totalmente equipados
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="hero" id="about">
+      <h2>INCLUYEN:</h2>
+      <div class="bio animate__animated animate__shakeX propietario1">
+        <h2 class="bio-titulo">WIFI + TV</h2>
+        <br />
+        <p>Conexión a internet de 100 MB en cada departamento</p>
+      </div>
+
+      <div class="bio animate__animated animate__shakeX propietario1">
+        <h2 class="bio-titulo">Expensas y servicios</h2>
+        <br />
+        <p>Las tarifas finales incluyen expensas y servicios</p>
+      </div>
+
+      <div class="bio animate__animated animate__shakeX propietario1">
+        <h2 class="bio-titulo">Seguridad 24hs</h2>
+        <br />
+        <p>Complejo vigilado con presencia de guardias y cámaras las 24 hs</p>
+      </div>
+
+      <div class="bio animate__animated animate__shakeX propietario1">
+        <h2 class="bio-titulo">Cocheras</h2>
+        <br />
+        <p>Cochera con costo según disponibilidad.</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <div class="child-page-listing">
+        <div class="grid-container">
+          <article id="3685" class="location-listing">
+            <!-- <a class="location-title" href="#">San Francisco</a>     -->
+            <div class="location-image">
+              <a href="#"
+                ><img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa01.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3688" class="location-listing">
+            <!-- <a class="location-title" href="#"> London </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa02.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3691" class="location-listing">
+            <!-- <a class="location-title" href="#">   New York            </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa03.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3694" class="location-listing">
+            <!-- <a class="location-title" href="#">  Cape Town           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa04.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3697" class="location-listing">
+            <!-- <a class="location-title" href="#"> Beijing           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa05.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3697" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa06.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa07.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa08.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa09.jpeg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa10.jpeg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa11.jpeg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <article id="3700" class="location-listing">
+            <!-- <a class="location-title" href="#">       Paris           </a> -->
+            <div class="location-image">
+              <a href="#">
+                <img
+                  width="300"
+                  height="169"
+                  src="./Img/fsa12.jpeg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+
+    <section class="hero" id="about">
+      <hr />
+      <h2>NUESTRA UBICACION</h2>
+      <hr />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.4597533092992!2d-58.168803428898165!3d-26.181718526457963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5ddba6b05af%3A0xa6dfd30363610327!2sHotel%20Internacional%20de%20Turismo!5e0!3m2!1ses!2sar!4v1714866264352!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="bio animate__animated animate__shakeX propietario1">
+        <h2 class="bio-titulo">P3600, San Martín 100  Formosa (Cap.)</h2>
+        <br />
+        <p>Teléfono:<span>+54 3704 555555</span></p>
+      </div>
+    </section>
 
     <footer id="footer">
-        <table>
-           <tr>
-            <td><a href="index.html"><img src="./Img/iconos/home.ico" alt="">Inicio</a></td>
-           </tr>
-           <tr>
-            <td><a href="acerca_de.html"><img src="./Img/iconos/group_key.ico" alt="">Sobre Nosotros</a></td>
-           </tr>
-           <tr>
-            <td><a href="propietarios.html"><img src="./Img/iconos/user_suit.ico" alt="">Propietarios</a></td>
-           </tr>
-           <tr>
-            <td><a href="contacto.html"><img src="./Img/iconos/email_edit.ico" alt="">Contacto</a></td>
-           </tr>
-            <td><a href="">Telefono:<span>+54 3701 111111</span></a></td>
-           <tr>
-            <td><a href="">Email:<span>info@rentashouse.com.ar</span></a></td>
-           </tr>
-         </table>
-      </footer>
-    
-</body>
+      <table>
+        <tr>
+          <td>
+            <a href="index.html"
+              ><img src="./Img/iconos/home.ico" alt="" />Inicio</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="acerca_de.html"
+              ><img src="./Img/iconos/group_key.ico" alt="" />Sobre Nosotros</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="propietarios.html"
+              ><img src="./Img/iconos/user_suit.ico" alt="" />Propietarios</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="contacto.html"
+              ><img src="./Img/iconos/email_edit.ico" alt="" />Contacto</a
+            >
+          </td>
+        </tr>
+        <td>
+          <a href="">Telefono:<span>+54 3701 111111</span></a>
+        </td>
+        <tr>
+          <td>
+            <a href="">Email:<span>info@rentashouse.com.ar</span></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
 </html>
