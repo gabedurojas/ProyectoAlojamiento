@@ -6,12 +6,14 @@
     <link rel="icon" href="./Img/iconos/user_suit.ico" />
     <title>Perfil Laboral - Propietario 1</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="./js/index.js"></script>
     <style>
         /* Estilos adicionales para el perfil laboral */
         #perfil-laboral {
             text-align: center;
             padding: 20px;
         }
+
         #perfil-laboral h2 {
             background: linear-gradient(to right, #0056b3, #007bff);
             color: #ffffff;
@@ -22,16 +24,19 @@
             display: inline-block;
             font-weight: bold;
         }
+
         #perfil-laboral p {
             text-align: justify;
             margin-bottom: 20px;
             color: #000000;
         }
+
         #perfil-laboral ul {
             text-align: left;
             margin-bottom: 20px;
         }
-        #volver-atras {
+
+         #volver-atras {
             display: inline-block;
             padding: 10px 20px;
             background: linear-gradient(to right, #0056b3, #007bff);
@@ -42,30 +47,19 @@
             text-decoration: none;
             font-weight: bold;
             animation: changeColor 2s infinite;
-            /* Aplicar la animación desde el principio */
         }
 
         #volver-atras:hover {
             background: linear-gradient(to right, #ff004c, #0056b3);
-            /* Cambiar el color al pasar el mouse */
             animation-play-state: paused;
-            /* Pausar la animación al pasar el mouse */
         }
 
         @keyframes changeColor {
-            0% {
-                background: linear-gradient(to right, #0056b3, #007bff);
-            }
-
-            50% {
-                background: linear-gradient(to right, #ff004c, #1573d6);
-            }
-            100% {
-                background: linear-gradient(to right, #0a374b, #000000);
-            }
-        }
-    </style>
-    </style>
+            0% { ackground: linear-gradient(to right, #0056b3, #007bff); }
+            50% {background: linear-gradient(to right, #ff004c, #1573d6);}
+            100% {background: linear-gradient(to right, #0a374b, #000000);}
+        } 
+    </style> 
 </head>
 <body>
     <header class="header1">
@@ -83,6 +77,14 @@
             </ul>
         </nav>
     </header>
+
+       <!-- icono de volver arriba -->
+       <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+       ><img
+         src="./Img/volver2.bmp"
+         class="socicon up-arrow"
+         alt="desplazarse-hacia-arriba"
+       /></i>
 
     <div id="perfil-laboral">
         <h2><strong>Perfil Laboral - Propietario 1</strong></h2>

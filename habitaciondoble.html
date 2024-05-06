@@ -10,6 +10,31 @@
     <script defer src="./js/index.js"></script>
 
     <script defer src="js/app.js"></script>
+    <style>
+      #volver-atras {
+       display: inline-block;
+       padding: 10px 20px;
+       background: linear-gradient(to right, #0056b3, #007bff);
+       color: #ffffff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       text-decoration: none;
+       font-weight: bold;
+       animation: changeColor 2s infinite;
+   }
+
+   #volver-atras:hover {
+       background: linear-gradient(to right, #ff004c, #0056b3);
+       animation-play-state: paused;
+   }
+
+   @keyframes changeColor {
+       0% { ackground: linear-gradient(to right, #0056b3, #007bff); }
+       50% {background: linear-gradient(to right, #ff004c, #1573d6);}
+       100% {background: linear-gradient(to right, #0a374b, #000000);}
+   } 
+</style>
 </head>
 <body>
 
@@ -77,7 +102,7 @@
     <hr>
     <section>
       <div style="text-align: center">
-        <p><span><a href="habitaciones.html" class="btn-cac">Volver</a></span></p>
+        <p><span><a href="habitaciones.html" class="btn-cac" id="volver-atras">Volver</a></span></p>
       </div>
     </section>
    <hr>
