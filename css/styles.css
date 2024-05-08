@@ -340,7 +340,39 @@ align-items: center;
     margin: 50px 0px;
 }
 
+#cerrarventana{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
 /*  C L A S E S */
+/*ventana flotante**/
+
+.ventana{
+    background-color: #0000ff;
+    width: 30%;
+    height: auto;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-width: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 35%;
+    top: 135%;
+    display: none;
+}
+
+.imgpagos{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius:  20px;
+}
+
 /*imagenes de las ubicaciones*/
 .grid-container {
     display: grid;
