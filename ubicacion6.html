@@ -142,9 +142,9 @@
       <div>
         <p>RÁPIDO, FÁCIL Y SEGURO</p>
         <ul>
-          <li>Check in 14:00 a 18:00 hs</li>
-          <li>Check out 08:30 a 10:00 hs</li>
-          <li>Cochera a pedido + costo (segun disponibilidad)</li>
+          <li><img src="./Img/iconos/home.ico" alt=""> Check in 14:00 a 18:00 hs</li>
+          <li><img src="./Img/iconos/home.ico" alt=""> Check out 08:30 a 10:00 hs</li>
+          <li><img src="./Img/iconos/house.ico" alt=""> Cochera a pedido + costo (segun disponibilidad)</li>
         </ul>
       </div>
       <hr />
@@ -167,8 +167,92 @@
       <p>
         El complejo cuenta con terraza verde, pileta con reposeras y asadores con unas vistas privilegiadas a la ciudad, cocheras con costo y gimnasio a pocos metros
       </p>
-
     </section>
+
+
+    <div class="ventana" id="vent1">
+      <div id="cerrarventana">
+        <a href="javascript:cerrar1()"><img src="./Img/iconos/Exit.ico" alt=""></a>      
+      </div>
+      <div>
+        <hr>
+        Tarifa: Premium 2 Habitaciones
+        <hr>
+        <br>
+        <h1>$65.000 p/Noche</h1>
+        <p>Consulte por promociones</p>
+        <img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111 
+        <br>
+        <br>
+        <hr>
+        Medios de Pagos
+        <hr>
+      </div>
+      <!-- style="height: 100px"  -->
+      <div>
+        <br>
+        <img class="imgpagos" src="./Img/efectivo.png" alt="">
+        <img class="imgpagos" src="./Img/trasferencias.png" alt="">
+        <img class="imgpagos" src="./Img/cheque.png" alt="">
+        <img class="imgpagos" src="./Img/tatjetacredito.png" alt="">
+      </div>
+    </div>
+
+    <div class="ventana" id="vent2">
+      <div id="cerrarventana">
+        <a href="javascript:cerrar2()"><img src="./Img/iconos/Exit.ico" alt=""></a>      
+      </div>
+      <div>
+        <hr>
+        Tarifa: Premium 1 Habitación
+        <hr>
+        <br>
+        <h1>$45.000 p/Noche</h1>
+        <p>Consulte por promociones</p>
+        <img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111 
+        <br>
+        <br>
+        <hr>
+        Medios de Pagos
+        <hr>
+      </div>
+      <div style="height: 100px">
+        <br>
+        <img class="imgpagos" src="./Img/efectivo.png" alt="">
+        <img class="imgpagos" src="./Img/trasferencias.png" alt="">
+        <img class="imgpagos" src="./Img/cheque.png" alt="">
+        <img class="imgpagos" src="./Img/tatjetacredito.png" alt="">
+      </div>
+    </div>
+
+    <div class="ventana" id="vent3">
+      <div id="cerrarventana">
+        <a href="javascript:cerrar3()"><img src="./Img/iconos/Exit.ico" alt=""></a>      
+      </div>
+      <div>
+        <hr>
+        Tarifa: Estándar 2 Habitaciones
+        <hr>
+        <br>
+        <h1>$50.000 p/Noche</h1>
+        <p>Consulte por promociones</p>
+        <img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111 
+        <br>
+        <br>
+        <hr>
+        Medios de Pagos
+        <hr>     
+      </div>
+      <div style="height: 100px">
+        <br>
+        <img class="imgpagos" src="./Img/efectivo.png" alt="">
+        <img class="imgpagos" src="./Img/trasferencias.png" alt="">
+        <img class="imgpagos" src="./Img/cheque.png" alt="">
+        <img class="imgpagos" src="./Img/tatjetacredito.png" alt="">
+      </div>
+    </div>
+
+
 
     <section id="propietario">
       <div class="propietario">
@@ -177,9 +261,12 @@
           <h3>Premium 2 Habitaciones</h3>
           <p>
             Departamentos premium de 2 habitaciones con ambientes cálidos y
-            amplios. Completamente amoblado y equipado con electrodomésticos de
-            acero inoxidable.
+            amplios con A/A en cada habitacion. Completamente amoblado y equipado con electrodomésticos de
+            ultima generacion.
           </p>
+        </div>
+        <div>
+          <a href="javascript:abrir1()" class="btn-cac">VER TARIFA</a>
         </div>
       </div>
 
@@ -189,8 +276,12 @@
           <h3>Premium 1 Habitación</h3>
           <p>
             Departamentos premium de 1 habitación con balcón que le regala a
-            cada uno de nuestros huéspedes excelentes panorámicas de la ciudad
+            nuestros huéspedes excelentes panorámicas de la ciudad.
+            Hambientes bien confortables totalmete amoblado, equipado y con A/A .
           </p>
+        </div>
+        <div>
+          <a href="javascript:abrir2()" class="btn-cac">VER TARIFA</a>
         </div>
       </div>
 
@@ -200,8 +291,12 @@
           <h3>Estándar 2 Habitaciones</h3>
           <p>
             Departamentos estándar de 2 habitaciones con ambientes amplios y
-            totalmente equipados
+            totalmente amoblado y equipado, bien confortables para una experiencia 
+            en familia sin igual. Precio justo y calidad asegurada.
           </p>
+        </div>
+        <div>
+          <a href="javascript:abrir3()" class="btn-cac">VER TARIFA</a>
         </div>
       </div>
     </section>
@@ -470,13 +565,13 @@
             </div>
           </div>
     
-          <!-- <div class="habitacion">
+          <div class="habitacion">
             <img src="Img/edificio6.jpg" alt="Habitación del hotel" />
             <div class="contenido">
               <h3>Formosa (Cap.)</h3>
               <a href="ubicacion6.html" class="btn-cac">Ver</a>
             </div>
-          </div> -->
+          </div>
         </section>
       </section>
 
@@ -520,5 +615,28 @@
         </tr>
       </table>
     </footer>
+
+    <script>
+      function abrir1() {
+        document.getElementById("vent1").style.display="block";
+      }  
+      function abrir2() {
+        document.getElementById("vent2").style.display="block";
+      }  
+      function abrir3() {
+        document.getElementById("vent3").style.display="block";
+      }  
+
+      function cerrar1(){
+        document.getElementById("vent1").style.display="none"; 
+      }
+      function cerrar2(){
+        document.getElementById("vent2").style.display="none"; 
+      }
+      function cerrar3(){       
+         document.getElementById("vent3").style.display="none"; 
+      }
+    </script>
+
   </body>
 </html>

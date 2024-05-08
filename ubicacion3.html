@@ -141,9 +141,9 @@
       <div>
         <p>RÁPIDO, FÁCIL Y SEGURO</p>
         <ul>
-          <li>Check in 14:00 a 18:00 hs</li>
-          <li>Check out 08:30 a 10:00 hs</li>
-          <li>Cochera a pedido + costo (segun disponibilidad)</li>
+          <li><img src="./Img/iconos/home.ico" alt=""> Check in 14:00 a 18:00 hs</li>
+          <li><img src="./Img/iconos/home.ico" alt=""> Check out 08:30 a 10:00 hs</li>
+          <li><img src="./Img/iconos/house.ico" alt=""> Cochera a pedido + costo (segun disponibilidad)</li>
         </ul>
       </div>
       <hr />
@@ -165,8 +165,63 @@
       </p>
     </section>
 
-    <section id="propietario">
 
+    <div class="ventana" id="vent1">
+      <div id="cerrarventana">
+        <a href="javascript:cerrar1()"><img src="./Img/iconos/Exit.ico" alt=""></a>      
+      </div>
+      <div>
+        <hr>
+        Tarifa: Estándar 1 Habitación
+        <hr>
+        <br>
+        <h1>$45.000 p/Noche</h1>
+        <p>Consulte por promociones</p>
+        <img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111 
+        <br>
+        <br>
+        <hr>
+        Medios de Pagos
+        <hr>
+      </div>
+      <!-- style="height: 100px"  -->
+      <div>
+        <br>
+        <img class="imgpagos" src="./Img/efectivo.png" alt="">
+        <img class="imgpagos" src="./Img/trasferencias.png" alt="">
+        <img class="imgpagos" src="./Img/cheque.png" alt="">
+        <img class="imgpagos" src="./Img/tatjetacredito.png" alt="">
+      </div>
+    </div>
+
+    <div class="ventana" id="vent2">
+      <div id="cerrarventana">
+        <a href="javascript:cerrar2()"><img src="./Img/iconos/Exit.ico" alt=""></a>      
+      </div>
+      <div>
+        <hr>
+        Tarifa: Estándar 2 Habitaciones
+        <hr>
+        <br>
+        <h1>$58.000 p/Noche</h1>
+        <p>Consulte por promociones</p>
+        <img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111 
+        <br>
+        <br>
+        <hr>
+        Medios de Pagos
+        <hr>
+      </div>
+      <div style="height: 100px">
+        <br>
+        <img class="imgpagos" src="./Img/efectivo.png" alt="">
+        <img class="imgpagos" src="./Img/trasferencias.png" alt="">
+        <img class="imgpagos" src="./Img/cheque.png" alt="">
+        <img class="imgpagos" src="./Img/tatjetacredito.png" alt="">
+      </div>
+    </div>
+
+    <section id="propietario">
       <div class="propietario">
         <img src="Img/img6.jpg" alt="Propietario2" />
         <div class="contenido">
@@ -176,6 +231,9 @@
             cada uno de nuestros huéspedes excelentes panorámicas de la ciudad
           </p>
         </div>
+        <div>
+          <a href="javascript:abrir1()" class="btn-cac">VER TARIFA</a>
+        </div>
       </div>
 
       <div class="propietario">
@@ -184,11 +242,13 @@
           <h3>Estándar 2 Habitaciones</h3>
           <p>
             Departamentos estándar de 2 habitaciones con ambientes amplios y
-            totalmente equipados
+            totalmente equipados. Especial para una estadia en familia.
           </p>
         </div>
+        <div>
+          <a href="javascript:abrir2()" class="btn-cac">VER TARIFA</a>
+        </div>
       </div>
-
     </section>
 
     <hr />
@@ -432,13 +492,13 @@
             </div>
           </div>
     
-          <!-- <div class="habitacion">
+          <div class="habitacion">
             <img src="Img/edificio3.jpg" alt="Habitación del hotel" />
             <div class="contenido">
               <h3>Posadas (Misiones)</h3>
               <a href="ubicacion3.html" class="btn-cac">Ver</a>
             </div>
-          </div> -->
+          </div>
     
           <div class="habitacion">
             <img src="Img/edificio4.jpg" alt="Habitación del hotel" />
@@ -485,15 +545,13 @@
         <tr>
           <td>
             <a href="propietarios.html"
-              ><img src="./Img/iconos/user_suit.ico" alt="" />Propietarios</a
-            >
+              ><img src="./Img/iconos/user_suit.ico" alt="" />Propietarios</a >
           </td>
         </tr>
         <tr>
           <td>
             <a href="contacto.html"
-              ><img src="./Img/iconos/email_edit.ico" alt="" />Contacto</a
-            >
+              ><img src="./Img/iconos/email_edit.ico" alt="" />Contacto</a>
           </td>
         </tr>
         <td>
@@ -506,5 +564,24 @@
         </tr>
       </table>
     </footer>
+
+    <script>
+      function abrir1() {
+        document.getElementById("vent1").style.display="block";
+      }  
+      function abrir2() {
+        document.getElementById("vent2").style.display="block";
+      }  
+  
+
+      function cerrar1(){
+        document.getElementById("vent1").style.display="none"; 
+      }
+      function cerrar2(){
+        document.getElementById("vent2").style.display="none"; 
+      }
+
+    </script>
+
   </body>
 </html>
