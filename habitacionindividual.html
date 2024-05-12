@@ -11,6 +11,23 @@
 
     <script defer src="js/app.js"></script>
     <style>
+              #habitaciones-heading {
+            background-color: #6495ED;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+            animation: changeColor 10s infinite; 
+            overflow: hidden; 
+        }
+        #habitaciones-heading h2 {
+            font-size: 28px; 
+            color: white; 
+            margin: 0;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+        }
+
       #volver-atras {
        display: inline-block;
        padding: 10px 20px;
@@ -22,19 +39,19 @@
        text-decoration: none;
        font-weight: bold;
        animation: changeColor 2s infinite;
-   }
+      }
 
-   #volver-atras:hover {
+      #volver-atras:hover {
        background: linear-gradient(to right, #ff004c, #0056b3);
        animation-play-state: paused;
-   }
+      }
 
-   @keyframes changeColor {
+      @keyframes changeColor {
        0% { ackground: linear-gradient(to right, #0056b3, #007bff); }
        50% {background: linear-gradient(to right, #ff004c, #1573d6);}
        100% {background: linear-gradient(to right, #0a374b, #000000);}
-   } 
-</style>
+      } 
+    </style>
 </head>
 <body>
 
@@ -42,13 +59,27 @@
 
   </header>
 
-    <section id="ubicacion">
+    <!-- <section id="ubicacion">
         <div>
           <hr>
           <h2>Habitacion Individual</h2>
           <hr>
         </div>
+    </section> -->
+    
+    <section id="habitaciones-heading">
+      <div>
+        <h2>Habitacion Individual<s</h2>
+      </div> 
     </section>
+
+    <section style="text-align: center; padding-left: 15%; padding-right: 15%;">
+      <p>Este departamento ofrece ambiente cálido y amplio. Completamente amoblado y equipado con Aire Acondicionado (frío calor) y electrodomésticos de acero inoxidable,  y ropa de cama completa para todos los huéspedes.
+        Para que no te falte nada en tu estadía mensual, semanal o por días.
+      </p>
+      <p>
+        Todos los alojamientos disponen de sala de estar con sofá, cocina completa y baño privado con bidet y ducha.</p>
+   </section>
 
     <section class="elbody">
       <main>

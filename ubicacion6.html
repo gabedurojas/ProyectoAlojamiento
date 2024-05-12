@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./Img/iconos/house.ico" />
     <title>Hotel De Turismo</title>
-    <!-- <link rel="stylesheet" href="./css/stylesheader.css"> -->
+    <link rel="stylesheet" href="./css/stylesform.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <script defer src="./js/index.js"></script>
 
@@ -27,7 +27,6 @@
              class="socicon up-arrow"
              alt="desplazarse-hacia-arriba"
            /></i>
-    
 
     <section id="bannerubicaciones6" >
       <section class="hero">
@@ -82,18 +81,16 @@
     </section>
 
     <section>
-      <br />
-      <hr />
+      <hr>
       <h2>RESERVA AHORA..</h2>
-      <div>
-        <p>RÁPIDO, FÁCIL Y SEGURO</p>
-        <ul>
-          <li><img src="./Img/iconos/home.ico" alt=""> Check in 14:00 a 18:00 hs</li>
-          <li><img src="./Img/iconos/home.ico" alt=""> Check out 08:30 a 10:00 hs</li>
-          <li><img src="./Img/iconos/house.ico" alt=""> Cochera a pedido + costo (segun disponibilidad)</li>
-        </ul>
+      <hr>    
+      <div  style="text-align: center; padding-left: 15%; padding-right: 15%; font-size: 25;">
+        <!-- <p>RÁPIDO, FÁCIL Y SEGURO</p> -->
+        <h1>RÁPIDO, FÁCIL Y SEGURO</h1>
+        <p><img src="./Img/iconos/home.ico" alt=""> Check in 14:00 a 18:00 hs</p>
+        <p><img src="./Img/iconos/home.ico" alt=""> Check out 08:30 a 10:00 hs</p>
+        <p><img src="./Img/iconos/car.ico" alt=""> Cochera a pedido + costo (segun disponibilidad)</p>
       </div>
-      <hr />
     </section>
 
     <br />
@@ -113,6 +110,8 @@
       <p>
         El complejo cuenta con terraza verde, pileta con reposeras y asadores con unas vistas privilegiadas a la ciudad, cocheras con costo y gimnasio a pocos metros
       </p>
+      <p>El complejo cuenta con locales comerciales, cafetería, bares y restaurantes en planta baja.
+        Las instalaciones y espacios están diseñados para la mayor comodidad de cada huésped. </p>
     </section>
 
 
@@ -451,6 +450,72 @@
       </div>
     </section>
 
+    <section id="formulario" >
+      <div class="container">
+        <br>
+        <h2>HAGA AHORA SU RESERVA</h2>
+        <br>
+        <h1>Sin comisiones ni gastos administrativos...</h1>
+        <hr>
+        <br>
+        <p>
+          Al realizar el tramite de contacto con la empresa con motivo de realizar una reserva,
+          este pedido se procesa segun el orden de pedidos que se ha registrado.
+          Entonces, por favor sepa disculpar si la respuesta no es rapida.
+        </p>
+        <br>
+        <hr>      
+        <p>
+          En el caso que la reserva sea de suma urgencia por favor comunicarse con nosotros mediante
+           nuestra linea telefonica directa. 
+        </p>
+        <p><img src="./Img/iconos/phone_sound.ico" alt=""> +54 3704 555555</p>
+        <br>
+        <form id="contactForm" onsubmit="return validateForm()">
+  
+          <label for="nombre">Nombre Solicitante:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="fecdesde">Fecha Desde:</label>
+          <input type="datetime-local" id="fecdesde" name="fecdesde" >
+
+          <label for="fechasta">Fecha Hasta:</label>
+          <input type="datetime-local" id="fechasta" name="fechasta" >
+  
+          <label for="prov">Tipo Habitacion :</label>
+          <select id="prov" name="prov">
+            <option value="">Seleccionar</option>
+            <option value="PH">Premium 2 Hab.</option>
+            <option value="P1">Premium 1 Hab.</option>
+            <option value="P1">Estandar 2 Hab.</option>
+          </select>
+
+          <label for="prov">Cantidad de huéspedes:</label>
+          <select id="prov" name="prov">
+            <option value="">Seleccionar</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="xxx@correo.com">
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="number" id="telefono" name="telefono" required  placeholder="000-00000">
+  
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Por favor ingrese alguna informacion de caracter importante.."></textarea>
+          
+          <input type="submit" value="Reservar">
+        </form>
+      </div>
+    </section>
+
+
     <hr />
 
     <section class="hero" id="about">
@@ -547,10 +612,11 @@
       }
     </script>
 
-  <!-- JavaScript para el header -->
+     <!-- JavaScript para el header -->
   <script src="js/header.js" defer></script>
 
   <!-- JavaScript para el footer -->
   <script src="js/footer.js" defer></script>
+
   </body>
 </html>
