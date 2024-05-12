@@ -16,6 +16,7 @@ let miFooter = `
 </ul>
 <p class="menufooter"><img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111</p>
 <p class="menufooter"><img src="./Img/iconos/email_edit.ico" alt=""> info@rentashouse.com.ar</p>
+<p class="menufooter"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:<span>0800 - 888 - 123456</span></p>
 `;
 
 // Seleccionar el footer y agregar el contenido
