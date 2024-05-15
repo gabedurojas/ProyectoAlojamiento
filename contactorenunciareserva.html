@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Img/iconos/house.ico" />
+
+       <!-- fuentes de google -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+      <!--      -->
+
+  <title>Contacto - Renuncia de Reserva</title>
+  <!-- <link rel="stylesheet" href="./css/stylesheader.css"> -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/stylesform.css">
+  <script defer src="./js/index.js"></script>
+  <script defer src="./js/formvalidation.js"></script>
+</head>
+
+<body>
+  <header class="header1">
+
+  </header>
+
+      <!-- icono de volver arriba -->
+      <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+      ><img
+        src="./Img/volver2.bmp"
+        class="socicon up-arrow"
+        alt="desplazarse-hacia-arriba"
+      /></i>
+
+  <!-- <section id="propietarios-heading" >
+    <div >
+        <h2 class="poetsen-one-regular">CONTACTO</h2>
+    </div> 
+  </section> -->
+
+  <section style="text-align: center">
+    <form style="width: 100%">
+
+      <fieldset style="height: 145px">
+        <br>
+        <legend>RECUERDEN Nuestros canales de comunicación son los siguientes:</legend>
+        <div ><p class="poetsen-one-regular"><img src="./Img/iconos/phone_sound.ico" alt="">Teléfono:  <span>+54 3701 111111</span></p></div>
+        <br>
+        <div><p class="poetsen-one-regular"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:  <span>0800 - 888 - 123456</span></p></div>
+        <br>
+        <div><p class="poetsen-one-regular"><img src="./Img/iconos/email_edit.ico" alt="">Email:  <span>info@rentashouse.com.ar</span></p></div>
+     
+      </fieldset>
+      <fieldset style="height: 95px">
+         <legend>Nuestras Redes Sociales:</legend> 
+         <br>    
+        <div class=".social_icon">
+           <a href="http://facebook.com/"  target="_blank">
+            <img src="./Img/facebook-48.png" alt="">
+           </a>
+           <a href="https://www.linkedin.com/" target="_blank">
+            <img src="./Img/linkedin-48.png" alt="">
+           </a>
+           <a href="https://www.instagram.com/" target="_blank">
+            <img src="./Img/iinstagram-48.png" alt="">
+           </a>
+           <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="./Img/whatsapp-48.png" alt="">
+           </a>
+       </div>    
+      </fieldset>
+    </form>   
+  </section>
+
+  <section id="formulario" >
+    <div class="container">
+      <br>
+      <h2 class="poetsen-one-regular">FORMULARIO DE ARREPENTIMIENTO DE COMPRA</h2>
+      <br>
+      <hr>
+      <br>
+      <p>
+        Al realizar este el tramite de cancelacion y entendiendo que ha cumplido con los requesitos exigibles a tal efecto.
+        Su reserva quedara anulada.
+      </p>
+      <br>
+      <hr>    
+      <p>
+        Si decide comunicarse con nosotros mediante nuestra linea telefonica, para realizar su cancelacion de forma mas rapido por favor no dude en llamar al siguiente nro de telefono. 
+      </p>
+      <p class="poetsen-one-regular"><img src="./Img/iconos/phone_sound.ico" alt="">+54 354 555555</p>
+      <br>
+      <form id="contactForm" onsubmit="return validateForm()">
+
+        <label for="nroreserva">Numero de Reserva:</label>
+        <input type="text" id="nroreserva" name="nroreserva" required>
+
+        <label for="fecdesde">Fecha Desde: (Fecha Inicio de la Reserva)</label>
+        <input type="datetime-local" id="fecdesde" name="fecdesde" >
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required placeholder="Calle Nº 1111">     -->
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required placeholder="+54 9 (011)-12345678">  
+        
+        <!-- <label for="motivo">Motivo de contacto:</label>
+        <select id="motivo" name="motivo">
+          <option value="">Seleccionar</option>
+          <option value="Consulta">Consulta</option>
+          <option value="Comentario">Comentario</option>
+          <option value="Queja">Queja</option>
+        </select> -->
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Por favor ingrese alguna informacion de caracter importante.."></textarea>
+        
+        <!-- <label>¿Cómo prefieres ser contactado?</label>
+        <input type="checkbox" id="contactoEmail" name="contacto" value="email"> 
+        <label for="contactoEmail">Email</label> -->
+
+        <!-- <input type="checkbox" id="contactoTelefono" name="contacto" value="telefono">     
+        <label for="contactoTelefono">Teléfono</label> -->
+     
+        <input type="submit" value="CANCELAR RESERVA">
+      </form>
+    </div>
+  </section>
+
+    <footer id="footer">
+
+    </footer>
+
+    <script src="js/formValidation.js" defer></script>
+
+        <!-- JavaScript para el header -->
+        <script src="js/header.js" defer></script>
+
+        <!-- JavaScript para el footer -->
+        <script src="js/footer.js" defer></script>
+</body>
+</html>
