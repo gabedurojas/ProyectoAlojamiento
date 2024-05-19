@@ -8,7 +8,7 @@ let miHeader = `
                   top: -27px !important; /* Desplazamiento hacia arriba */
                   left: -10px !important; /* Desplazamiento hacia la izquierda */" />
     </a>
-    <img class="nav1-toggle"  src="./Img/application_double.ico" alt=""
+    <img class="nav1-toggle"  src="./Img/iconos/application_double.ico" alt=""
          style="width: 15px; height: 18px; /* Tamaño fijo para el ícono de doble aplicación */" />
     <ul class="nav1-menu nav1-menu_visible">
       <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html" class="nav1-menu-link nav1-link">Inicio</a></li>

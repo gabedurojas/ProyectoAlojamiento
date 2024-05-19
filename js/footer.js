@@ -19,5 +19,6 @@ let miFooter = `
 <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:<span class="poetsen-one-regular">  0800 - 888 - 123456</span></p>
 `;
 
+
 // Seleccionar el footer y agregar el contenido
 document.querySelector("footer").innerHTML = miFooter;
