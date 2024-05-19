@@ -7,7 +7,7 @@
 
 /*clase para el navegador*/
 .header1{
-  background-color: blue;
+  background-color: lightblue;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -75,7 +75,7 @@ border-radius: 3px;
      color: white;
      border: none;
      font-size: 20px;
-     padding: 0 20px;
+     padding: 0 0px;
      line-height: 60px;
      display: none;
 }

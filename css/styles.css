@@ -281,9 +281,10 @@ footer img{
     text-align: center;
 }
 
+
 #formulario {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 #ubicacion{
@@ -423,6 +424,11 @@ align-items: center;
     font-weight: 400;
     font-style: normal;
   }
+
+  /* .qr img{
+    width: 5px;
+    height: 5px;
+  } */
 /***/
 
 
@@ -641,7 +647,7 @@ gap: 15px;
        font-size: 20px;
        padding: 0 20px;
        line-height: 60px;
-       display: none;
+       /* display: none; */
 }
 
   @media (max-width: 768px) {
@@ -788,6 +794,62 @@ gap: 15px;
     color: #fafafe;
     cursor: pointer;
 }
+
+.btn-cancela{
+    /* background-color: var(--primary-color); */
+    background-color:rebeccapurple;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 80px;
+    color: #fafafe;
+    cursor: pointer;
+}
+
+.parpadea {
+    /* color: red; */
+    animation-name: parpadeo;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .parpadea2 {
+    color: red;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
 
 .container{
     max-width: 1200px;
@@ -1228,7 +1290,8 @@ gap: 15px;
 
 
 /* formulario de contacto */
- #fs-frm input,
+
+#fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm fieldset,
