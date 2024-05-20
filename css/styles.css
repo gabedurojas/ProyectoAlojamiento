@@ -58,16 +58,9 @@ a{
 h2{
     color: blue;
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
     text-shadow: 5px 2.5px 5px black;
-}
-
-h1{
-    font-weight: bold;
-    font-size: 2.1vw;
-    text-align: center;
-    /* text-shadow: 5px 2.5px 5px black;    */
 }
 
 body{
@@ -221,9 +214,9 @@ footer{
     width: 100%;
     background:  blue; 
     height: 250px;
-    /* padding: 10px 25px; */
+    padding: 10px 25px;
     flex-direction: column;
-    border-radius: 90px 90px 0px 0px;
+    border-radius: 20px;
 }
 
 footer .social_icon,
@@ -279,12 +272,14 @@ footer p,
 footer img{
     color: white;
     text-align: center;
+    /* margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em; */
 }
-
 
 #formulario {
     max-width: 600px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 #ubicacion{
@@ -412,26 +407,6 @@ align-items: center;
 }
 
 /*  C L A S E S */
-/*para las fuetes*/
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  /* .qr img{
-    width: 5px;
-    height: 5px;
-  } */
-/***/
-
-
 /* para las habitaciones***/
 .elbody{
  width: 100%;
@@ -487,7 +462,7 @@ gap: 15px;
 
 /*ventana flotante**/
 .ventana{
-    background-color: skyblue;
+    background-color: #0000ff;
     width: 30%;
     height: auto;
     color: #f0f0f0;
@@ -501,10 +476,6 @@ gap: 15px;
     left: 35%;
     top: 135%;
     display: none;
-}
-
-.ventana h1, p, img {
-    color: #000000;
 }
 
 .imgpagos{
@@ -647,7 +618,7 @@ gap: 15px;
        font-size: 20px;
        padding: 0 20px;
        line-height: 60px;
-       /* display: none; */
+       display: none;
 }
 
   @media (max-width: 768px) {
@@ -794,62 +765,6 @@ gap: 15px;
     color: #fafafe;
     cursor: pointer;
 }
-
-.btn-cancela{
-    /* background-color: var(--primary-color); */
-    background-color:rebeccapurple;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    border-radius: 80px;
-    color: #fafafe;
-    cursor: pointer;
-}
-
-.parpadea {
-    /* color: red; */
-    animation-name: parpadeo;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  
-    -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  .parpadea2 {
-    color: red;
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  
-    -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  @-moz-keyframes parpadeo{  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  
-  @-webkit-keyframes parpadeo {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-     100% { opacity: 1.0; }
-  }
-  
-  @keyframes parpadeo {  
-    0% { opacity: 1.0; }
-     50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
 
 .container{
     max-width: 1200px;
@@ -1290,8 +1205,7 @@ gap: 15px;
 
 
 /* formulario de contacto */
-
-#fs-frm input,
+ #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm fieldset,
@@ -1309,6 +1223,7 @@ gap: 15px;
   margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 
 #fs-frm label,
