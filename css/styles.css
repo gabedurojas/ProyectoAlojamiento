@@ -26,7 +26,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     z-index: 9999;
 }
 
@@ -219,11 +219,12 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background:  blue; 
-    height: 250px;
+    background-image: url('../Img/AdobeStock_1.png');
+    /* background:  blue;  */
+    height: 230px;
     /* padding: 10px 25px; */
     flex-direction: column;
-    border-radius: 90px 90px 0px 0px;
+    border-radius: 0px 0px 90px 90px;
 }
 
 footer .social_icon,
@@ -255,7 +256,7 @@ footer .social_icon li a:hover{
 
 footer .menufooter li a{
     font-size: 1.2em;
-    color: white;
+    color: blue;
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
@@ -279,6 +280,7 @@ footer p,
 footer img{
     color: white;
     text-align: center;
+    font-size: 20px;
 }
 
 
