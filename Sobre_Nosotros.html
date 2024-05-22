@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./Img/iconos/house.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script defer src="./js/index.js"></script>
+
+
+  <!-- fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <!--      -->
+
+  <title>Sobre Nosotros</title>
+  <link rel="stylesheet" href="./css/stylesheader.css" />
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <style>
+    /* Estilos para el título de los propietarios */
+    #ubicacion-heading {
+      background-color: #6495ED;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 20px;
+      text-align: center;
+      display: inline-block;
+      animation: changeColor 10s infinite;
+      /* Cambiamos la duración a 10 segundos y hacemos la animación infinita */
+      overflow: hidden;
+      /* Para evitar que el texto se desenfoque */
+    }
+
+    #ubicacion-heading h2 {
+      font-size: 28px;
+      /* Reducimos el tamaño del texto */
+      color: white;
+      /* Color del texto */
+      margin: 0;
+      /* Eliminamos el margen */
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);/
+    }
+
+    /* Animación para el cambio de color del título */
+    @keyframes changeColor {
+      0% {
+        background-color: #000000;
+      }
+
+      20% {
+        background-color: #3b76e4;
+      }
+
+      40% {
+        background-color: #fc17c3ea;
+      }
+
+      60% {
+        background-color: #37bd37;
+      }
+
+      80% {
+        background-color: #8A2BE2;
+      }
+
+      100% {
+        background-color: #ff0000;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header class="header1">
+    <nav class="nav1">
+      <a href="" class="logo1 nav1-link">
+        <img src="Img/logo.png" alt="Logo de la empresa" class="logo1" style="width: 110px; height: auto; 
+                        position: relative; /* Establece la posición relativa para permitir ajustes */
+                        top: -27px !important; /* Desplazamiento hacia arriba */
+                        left: -10px !important; /* Desplazamiento hacia la izquierda */" />
+      </a>
+      <img class="nav1-toggle" src="./Img/iconos/application_double.ico" alt=""
+        style="width: auto; height: 10%; /* Tamaño fijo para el ícono de doble aplicación */" />
+      <ul class="nav1-menu nav1-menu_visible">
+        <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html"
+            class="nav1-menu-link nav1-link">Inicio</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="Sobre_Nosotros.html"
+            class="nav1-menu-link nav1-link">Sobre Nosotros</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html"
+            class="nav1-menu-link nav1-link">Habitaciones</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html"
+            class="nav1-menu-link nav1-link">Propietarios</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html"
+            class="nav1-menu-link nav1-link">Nueva Franquicia</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html"
+            class="nav1-menu-link nav1-link">Sucursales</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html"
+            class="nav1-menu-link nav1-link nav1-menu-link_active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- icono de volver arriba -->
+  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="./Img/volver2.bmp"
+      class="socicon up-arrow" alt="desplazarse-hacia-arriba" /></i>
+
+  <!-- id="banner2"  -->
+  <section id="ubicacion-heading">
+    <div>
+      <h2 class="poetsen-one-regular">EMPRESAS QUE CONFIAN EN NOSOTROS</h2>
+    </div>
+  </section>
+
+  <section id="bannercarruel">
+    <div>
+      <div class="swiffy-slider">
+        <ul class="slider-container">
+          <li><img src="./Img/naranja.png" style="max-width: 100%;height: auto;"></li>
+          <li><img src="./Img/banconacion.png" style="max-width: 100%;height: auto;"></li>
+          <li><img src="./Img/galicia.png" style="max-width: 100%;height: auto;"></li>
+          <li><img src="./Img/mercadolibre.jpg" style="max-width: 100%;height: auto;"></li>
+        </ul>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ubicacion">
+    <div>
+      <hr>
+      <h2 class="poetsen-one-regular ">Somos Garantía en Sistemas de Alojamientos Temporarios</h2>
+      <hr>
+    </div>
+    <br>
+    <div>
+      <p>Somos una empresa que surge de la necesidad de ofrecer un alojamiento alternativo al modelo de alojamiento
+        tradicional.
+        Nuestra Casa Central se encuentra ubicado en una zona privilegiada, cerca de las principales atracciones
+        turísticas y con fácil acceso desde el aeropuerto. ¡Te esperamos con los brazos abiertos!</p>
+    </div>
+    <div>
+      <p>En nuestra enpresa queremos que los clientes o mejor aún, las personas que nos visitan, sientan la libertad de
+        un apartamento con seguridad, la calidad y servicios de un hotel.
+        Es por ello que nos dedicamos a los alojamientos temporarios con inmuebles de la mas alta calidad desde año
+        2021.
+        Esto nos lleva a ser pioneros en este nuevo servicio de alojamiento para turistas, empresas o familias.</p>
+    </div>
+    <div>
+      <p>Apostamos a la capacitación y actualización de nuestro personal, por eso es que contamos con un equipo de
+        profesionales con sólida formación que trabajan constantemente para lograr nuestro mayor objetivo que es la
+        satisfacción de nuestros clientes ofreciendo un servicio de calidad. </p>
+    </div>
+    <!-- <div class="mapa-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3446.286995958968!2d-57.62520504205016!3d-30.257402957074543!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE1JzI1LjgiUyA1N8KwMzcnMjkuMCJX!5e0!3m2!1ses-419!2sar!4v1712711760420!5m2!1ses-419!2sar" width="600" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
+  </section>
+  <br>
+  <br>
+
+  <div>
+    <hr>
+    <h2 class="poetsen-one-regular ">Como llegar a Nosotros</h2>
+    <hr>
+  </div>
+  <section class="hero" id="about">
+    <img src="./Img/hotel-2.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.6321187452095!2d-64.18000732493914!3d-31.421821796513107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a290b588dafd%3A0x4cb116a899f834fd!2sCasa%20Urbana%20Hotel!5e1!3m2!1ses!2sar!4v1714606036557!5m2!1ses!2sar"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="animate__animated animate__shakeX propietario1">
+      <h2 class="poetsen-one-regular" class="bio-titulo">CASA CENTRAL Cordoba (Cap.)</h2>
+      <p class="bio-texto">
+        X5000ASG, Bv Pte. Umberto Arturo Illia 615, Córdoba (Cap)
+      </p>
+      <br>
+      <p>Teléfono:<span>+54 3701 111111</span></p>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <ul class="social_icon">
+      <li><a href="http://facebook.com/" target="_blank"><img src="./Img/facebook-48.png" alt=""></a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank"><img src="./Img/linkedin-48.png" alt=""></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><img src="./Img/iinstagram-48.png" alt=""></a></li>
+      <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./Img/whatsapp-48.png" alt=""></a></li>
+    </ul>
+    <ul class="menufooter">
+      <li><a class="poetsen-one-regular" href="index.html"><img src="./Img/iconos/home.ico" alt="" /> Inicio</a></li>
+      <li><a class="poetsen-one-regular" href="Sobre_Nosotros.html"><img src="./Img/iconos/group_key.ico" alt="" />
+          Sobre Nosotros</a></li>
+      <li><a class="poetsen-one-regular" href="habitaciones.html"><img src="./Img/iconos/house.ico" alt="" />
+          Habitaciones</a></li>
+      <li><a class="poetsen-one-regular" href="sucursales.html"><img src="./Img/iconos/flag_blue.ico" alt="" />
+          Sucursales</a></li>
+      <li><a class="poetsen-one-regular" href="propietarios.html"><img src="./Img/iconos/user_suit.ico" alt="" />
+          Propietarios</a></li>
+      <li><a class="poetsen-one-regular" href="contacto.html"><img src="./Img/iconos/email_edit.ico" alt="" />
+          Contacto</a></li>
+    </ul>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111
+    </p>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/email_edit.ico" alt="">
+      info@rentashouse.com.ar</p>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:<span
+        class="poetsen-one-regular"> 0800 - 888 - 123456</span></p>
+
+  </footer>
+</body>
+
+</html>

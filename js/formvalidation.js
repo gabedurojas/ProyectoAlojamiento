@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault(); // Evitar el envío del formulario por defecto
 
         if (validateForm()) {
-            // No necesitamos la alerta, ya que mostramos un mensaje de confirmación personalizado
-            // alert("Formulario válido. Datos enviados."); 
             formulario.reset();
             showConfirmationMessage(); // Mostrar mensaje de confirmación
             sendFormData(formulario);
@@ -15,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function validateForm() {
-    var nombre = document.getElementById("nombre").value.trim();
+    var nombre = document.getElementById("nombreApellido").value.trim();
     var direccion = document.getElementById("direccion").value.trim();
     var email = document.getElementById("email").value.trim();
     var telefono = document.getElementById("telefono").value.trim();
@@ -23,49 +21,13 @@ function validateForm() {
     var mensaje = document.getElementById("mensaje").value.trim();
     var contactoEmail = document.getElementById("contactoEmail").checked;
     var contactoTelefono = document.getElementById("contactoTelefono").checked;
+    var adjunto = document.getElementById("adjunto").value; // Obtener el valor del campo de archivo
     var error = "";
 
-    // Validación del nombre
-    if (nombre === "") {
-        error += "Por favor, ingresa tu nombre.\n";
-    }
-
-    // Validación de la dirección
-    if (direccion === "") {
-        error += "Por favor, ingresa tu dirección.\n";
-    }
-
-    // Validación del email
-    if (email === "") {
-        error += "Por favor, ingresa tu email.\n";
-    } else if (!validateEmail(email)) {
-        error += "Por favor, ingresa un email válido.\n";
-    }
-
-    // Validación del teléfono
-    if (telefono === "") {
-        error += "Por favor, ingresa tu teléfono.\n";
-    } else if (!validatePhone(telefono)) {
-        error += "Por favor, ingresa un teléfono válido.\n";
-    }
-
-    // Validación del motivo
-    if (motivo === "") {
-        error += "Por favor, selecciona un motivo de contacto.\n";
-    }
-
-    // Validación del mensaje
-    if (mensaje === "") {
-        error += "Por favor, ingresa un mensaje.\n";
-    }
-
-    // Validación de la forma de contacto preferida
-    if (!contactoEmail && !contactoTelefono) {
-        error += "Por favor, selecciona al menos una forma de contacto.\n";
-    }
+    // Validaciones ...
 
     if (error !== "") {
-        // alert(error); // No necesitamos esta alerta
+        alert(error);
         return false;
     }
     

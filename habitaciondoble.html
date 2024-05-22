@@ -1,167 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Img/iconos/house.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Img/iconos/house.ico" />
 
-           <!-- fuentes de google -->
-           <link rel="preconnect" href="https://fonts.googleapis.com">
-           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-           <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
-          <!--      -->
+  <!-- fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <!--      -->
 
-    <title>Habitacion Doble</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script defer src="./js/index.js"></script>
+  <title>Habitacion Doble</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/index.js"></script>
 
-    <script defer src="js/app.js"></script>
-    <style>
-        #habitaciones-heading {
-            background-color: #6495ED;
-            border-radius: 10px;
-            padding: 10px 20px;
-            margin: 20px;
-            text-align: center;
-            display: inline-block;
-            animation: changeColor 10s infinite; 
-            overflow: hidden; 
-        }
-        #habitaciones-heading h2 {
-            font-size: 28px; 
-            color: white; 
-            margin: 0;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
-        }
+  <script defer src="js/app.js"></script>
+  <style>
+    #habitaciones-heading {
+      background-color: #6495ED;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 20px;
+      text-align: center;
+      display: inline-block;
+      animation: changeColor 10s infinite;
+      overflow: hidden;
+    }
 
-      #volver-atras {
-       display: inline-block;
-       padding: 10px 20px;
-       background: linear-gradient(to right, #0056b3, #007bff);
-       color: #ffffff;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-       text-decoration: none;
-       font-weight: bold;
-       animation: changeColor 2s infinite;
-     }
+    #habitaciones-heading h2 {
+      font-size: 28px;
+      color: white;
+      margin: 0;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
 
-     #volver-atras:hover {
-       background: linear-gradient(to right, #ff004c, #0056b3);
-       animation-play-state: paused;
-     }
+    #volver-atras {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #0056b3, #007bff);
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      animation: changeColor 2s infinite;
+    }
 
-     @keyframes changeColor {
-       0% { ackground: linear-gradient(to right, #0056b3, #007bff); }
-       50% {background: linear-gradient(to right, #ff004c, #1573d6);}
-       100% {background: linear-gradient(to right, #0a374b, #000000);}
-     } 
-    </style>
+    #volver-atras:hover {
+      background: linear-gradient(to right, #ff004c, #0056b3);
+      animation-play-state: paused;
+    }
+
+    @keyframes changeColor {
+      0% {
+        ackground: linear-gradient(to right, #0056b3, #007bff);
+      }
+
+      50% {
+        background: linear-gradient(to right, #ff004c, #1573d6);
+      }
+
+      100% {
+        background: linear-gradient(to right, #0a374b, #000000);
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="header1">
     <nav class="nav1">
       <a href="" class="logo1 nav1-link">
-        <img src="Img/logo.png" alt="Logo de la empresa" class="logo1"
-             style="width: 110px; height: auto; 
+        <img src="Img/logo.png" alt="Logo de la empresa" class="logo1" style="width: 110px; height: auto; 
                     position: relative; /* Establece la posición relativa para permitir ajustes */
                     top: -27px !important; /* Desplazamiento hacia arriba */
                     left: -10px !important; /* Desplazamiento hacia la izquierda */" />
       </a>
-      <img class="nav1-toggle"  src="./Img/iconos/application_double.ico" alt=""
-           style="width: 15px; height: 18px; /* Tamaño fijo para el ícono de doble aplicación */" />
+      <img class="nav1-toggle" src="./Img/iconos/application_double.ico" alt=""
+        style="width: auto; height: 10%; /* Tamaño fijo para el ícono de doble aplicación */" />
       <ul class="nav1-menu nav1-menu_visible">
-        <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html" class="nav1-menu-link nav1-link">Inicio</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="acerca_de.html" class="nav1-menu-link nav1-link">Sobre Nosotros</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html" class="nav1-menu-link nav1-link">Habitaciones</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html" class="nav1-menu-link nav1-link">Propietarios</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html" class="nav1-menu-link nav1-link">Nueva Franquicia</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html" class="nav1-menu-link nav1-link">Sucursales</a></li>
-        <li class="nav1-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html" class="nav1-menu-link nav1-link nav1-menu-link_active">Contacto</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html"
+            class="nav1-menu-link nav1-link">Inicio</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="Sobre_Nosotros.html"
+            class="nav1-menu-link nav1-link">Sobre Nosotros</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html"
+            class="nav1-menu-link nav1-link">Habitaciones</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html"
+            class="nav1-menu-link nav1-link">Propietarios</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html"
+            class="nav1-menu-link nav1-link">Nueva Franquicia</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html"
+            class="nav1-menu-link nav1-link">Sucursales</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html"
+            class="nav1-menu-link nav1-link nav1-menu-link_active">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-     <!-- icono de volver arriba -->
-     <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
-     ><img
-       src="./Img/volver2.bmp"
-       class="socicon up-arrow"
-       alt="desplazarse-hacia-arriba"
-     /></i>
+  <!-- icono de volver arriba -->
+  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="./Img/volver2.bmp"
+      class="socicon up-arrow" alt="desplazarse-hacia-arriba" /></i>
 
-    <section id="habitaciones-heading">
-      <div>
-        <h2 class="poetsen-one-regular">Habitacion Doble<s</h2>
-      </div> 
-    </section>
+  <section id="habitaciones-heading">
+    <div>
+      <h2 class="poetsen-one-regular">Habitacion Doble<s< /h2>
+    </div>
+  </section>
 
-    <section style="text-align: center; padding-left: 15%; padding-right: 15%;">
-      <p>Este tipo de departamentos ofrece ambiente cálido y amplio. Completamente amoblado y equipado con Aire Acondicionado (frío calor) y electrodomésticos de acero inoxidable,  y ropa de cama completa para todos los huéspedes.
-        Para que no te falte nada en tu estadía mensual, semanal o por días.
-      </p>
-      <p>
-        Todos los alojamientos disponen de sala de estar con sofá, cocina completa y baño privado con bidet y ducha.</p>
-   </section>
+  <section style="text-align: center; padding-left: 15%; padding-right: 15%;">
+    <p>Este tipo de departamentos ofrece ambiente cálido y amplio. Completamente amoblado y equipado con Aire
+      Acondicionado (frío calor) y electrodomésticos de acero inoxidable, y ropa de cama completa para todos los
+      huéspedes.
+      Para que no te falte nada en tu estadía mensual, semanal o por días.
+    </p>
+    <p>
+      Todos los alojamientos disponen de sala de estar con sofá, cocina completa y baño privado con bidet y ducha.</p>
+  </section>
 
-     <section class="elbody">
-      <main>
-        <div class="card">
-          <img src="./Img/img21.jpg" alt="" class="image">
-        </div>
-        <div class="card">
-          <img src="./Img/img22.jpg" alt="" class="image">
-        </div>
-        <div class="card">
-          <img src="./Img/img23.jpg" alt="" class="image">
-        </div>
-        <div class="card">
-          <img src="./Img/img24.jpg" alt="" class="image">
-        </div>
-        <div class="card">
-          <img src="./Img/img25.jpg" alt="" class="image">
-        </div>
-        <div class="card">
-          <img src="./Img/img26.jpg" alt="" class="image">
-        </div>
-      </main>
-     </section>  
-
-    <hr>
-    <section>
-      <div style="text-align: center">
-        <p><span><a href="habitaciones.html" class="btn-cac" id="volver-atras">Volver</a></span></p>
+  <section class="elbody">
+    <main>
+      <div class="card">
+        <img src="./Img/img21.jpg" alt="" class="image">
       </div>
-    </section>
-   <hr>
-  
-    <footer id="footer">
-      <ul class="social_icon">
-        <li><a href="http://facebook.com/"  target="_blank"><img src="./Img/facebook-48.png" alt=""></a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank"><img src="./Img/linkedin-48.png" alt=""></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="./Img/iinstagram-48.png" alt=""></a></li>
-        <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./Img/whatsapp-48.png" alt=""></a></li>
-      </ul>
-      <ul class="menufooter"> 
-        <li><a class="poetsen-one-regular" href="index.html" ><img src="./Img/iconos/home.ico" alt="" /> Inicio</a></li>
-        <li><a class="poetsen-one-regular" href="acerca_de.html"><img src="./Img/iconos/group_key.ico" alt="" /> Sobre Nosotros</a></li>
-        <li><a class="poetsen-one-regular" href="habitaciones.html"><img src="./Img/iconos/house.ico" alt="" /> Habitaciones</a></li>
-        <li><a class="poetsen-one-regular" href="sucursales.html"><img src="./Img/iconos/flag_blue.ico" alt="" /> Sucursales</a></li>
-        <li><a class="poetsen-one-regular" href="propietarios.html" ><img src="./Img/iconos/user_suit.ico" alt="" /> Propietarios</a></li>
-        <li><a class="poetsen-one-regular" href="contacto.html" ><img src="./Img/iconos/email_edit.ico" alt="" /> Contacto</a></li>
-      </ul>
-      <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/phone_sound.ico" alt="">  +54 3701 111111</p>
-      <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/email_edit.ico" alt="">  info@rentashouse.com.ar</p>
-      <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:<span class="poetsen-one-regular">  0800 - 888 - 123456</span></p>
-  
-    </footer>
+      <div class="card">
+        <img src="./Img/img22.jpg" alt="" class="image">
+      </div>
+      <div class="card">
+        <img src="./Img/img23.jpg" alt="" class="image">
+      </div>
+      <div class="card">
+        <img src="./Img/img24.jpg" alt="" class="image">
+      </div>
+      <div class="card">
+        <img src="./Img/img25.jpg" alt="" class="image">
+      </div>
+      <div class="card">
+        <img src="./Img/img26.jpg" alt="" class="image">
+      </div>
+    </main>
+  </section>
 
-    <!-- JavaScript para el header -->
-    <!-- <script src="js/header.js" defer></script> -->
+  <hr>
+  <section>
+    <div style="text-align: center">
+      <p><span><a href="habitaciones.html" class="btn-cac" id="volver-atras">Volver</a></span></p>
+    </div>
+  </section>
+  <hr>
 
-    <!-- JavaScript para el footer -->
-    <!-- <script src="js/footer.js" defer></script> -->
-    
+  <footer id="footer">
+    <ul class="social_icon">
+      <li><a href="http://facebook.com/" target="_blank"><img src="./Img/facebook-48.png" alt=""></a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank"><img src="./Img/linkedin-48.png" alt=""></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><img src="./Img/iinstagram-48.png" alt=""></a></li>
+      <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./Img/whatsapp-48.png" alt=""></a></li>
+    </ul>
+    <ul class="menufooter">
+      <li><a class="poetsen-one-regular" href="index.html"><img src="./Img/iconos/home.ico" alt="" /> Inicio</a></li>
+      <li><a class="poetsen-one-regular" href="Sobre_Nosotros.html"><img src="./Img/iconos/group_key.ico" alt="" />
+          Sobre Nosotros</a></li>
+      <li><a class="poetsen-one-regular" href="habitaciones.html"><img src="./Img/iconos/house.ico" alt="" />
+          Habitaciones</a></li>
+      <li><a class="poetsen-one-regular" href="sucursales.html"><img src="./Img/iconos/flag_blue.ico" alt="" />
+          Sucursales</a></li>
+      <li><a class="poetsen-one-regular" href="propietarios.html"><img src="./Img/iconos/user_suit.ico" alt="" />
+          Propietarios</a></li>
+      <li><a class="poetsen-one-regular" href="contacto.html"><img src="./Img/iconos/email_edit.ico" alt="" />
+          Contacto</a></li>
+    </ul>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/phone_sound.ico" alt=""> +54 3701 111111
+    </p>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/email_edit.ico" alt="">
+      info@rentashouse.com.ar</p>
+    <p class="poetsen-one-regular" class="menufooter"><img src="./Img/iconos/group_key.ico" alt="">Línea Gratuita:<span
+        class="poetsen-one-regular"> 0800 - 888 - 123456</span></p>
+
+  </footer>
 </body>
+
 </html>
