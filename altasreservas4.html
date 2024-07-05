@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+      <!-- Favicon -->
+    <link rel="icon" href="./Img/iconos/house.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Reservas 🚀</title>
+    <link rel="stylesheet" href="./css/estilosreservas.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!--<header>
+        <nav class="navbar-index ">
+            <img class="logo-nav" src="./static/imagenes/logos-nav.webp" alt="logo agencia de aprendizaje">
+        </nav>
+    </header>-->
+
+    <div class="logo-centrado">
+        <img src="./Img/logo.png" alt="logo">
+    </div>
+    <h1>Agregar Nueva Reserva</h1>
+    <h1>Alvear Alojamientos - Resistencia (Chaco)</h1>   
+    <br>
+
+    <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
+    <form id="formulario" enctype="multipart/form-data">
+        
+        <label for="solicitante">Nombre Solicitante:</label>
+        <input type="text" id="solicitante" name="solicitante" required><br>
+
+        <label for="hotel">Hotel:</label>
+        <select id="hotel" name="hotel">
+            <option value="AlvearAlojamientosResistencia">Alvear Alojamientos - Resistencia</option>
+        </select>
+        <!--<input type="text" id="hotel" name="hotel" required><br>-->
+
+        <label for="tipohabitacion">Tipo Habitacion:</label>
+        <select id="tipohabitacion" name="tipohabitacion">
+            <option value="">Seleccionar</option>
+            <option value="Premiun1Hab.">Premiun 1 Hab.</option>
+            <option value="Premiun2Hab.">Premiun 2 Hab.</option>
+            <option value="Estandar1Hab.">Estandar 1 Hab.</option>
+            <option value="Estandar2Hab.">Estandar 2 Hab.</option>
+        </select>
+        <!--<input type="text" id="tipohabitacion" name="tipohabitacion" required><br>-->
+
+        <label for="fecdesde">Fecha Desde:</label>
+        <input type="date" id="fecdesde" name="fecdesde" required><br>
+
+        <label for="fechasta">Fecha Hasta:</label>
+        <input type="date" id="fechasta" name="fechasta" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@****.com" required><br>
+
+        <label for="imagenProducto">Imagen Dni:</label>
+        <input type="file" id="imagenProducto" name="imagen">
+
+        <br><br>
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono">
+        
+        <button type="submit">Ingresar Reserva <img src="./Img/insertar.bmp" alt=""></button>
+        <!-- <a href="index.html">Menu principal <img src="./imagenes/home.ico" alt=""></a> -->
+        <a href="ubicacion4.html">Volver <img src="./Img/iconos/home.ico" alt=""></a>
+    </form>
+
+    <script>
+        //http://gabrojas.pythonanywhere.com/
+        const URL = "https://gabrojas.pythonanywhere.com/"
+
+        //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
+        //const URL = "https://USUARIO.pythonanywhere.com/"
+        
+        // Capturamos el evento de envío del formulario
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitamos que se envie el form 
+
+            var formData = new FormData(this);
+    
+            // Realizamos la solicitud POST al servidor
+            fetch(URL + 'reserva', {
+                method: 'POST',
+                body: formData // Aquí enviamos formData. Dado que formData puede contener archivos, no se utiliza JSON.
+            })
+
+            //Después de realizar la solicitud POST, se utiliza el método then() para manejar la respuesta del servidor.
+            .then(function (response) {
+                    if (response.ok) { 
+                        //Si la respuesta es exitosa, convierte los datos de la respuesta a formato JSON.
+                        return response.json(); 
+                    } else {
+                        // Si hubo un error, lanzar explícitamente una excepción
+                        // para ser "catcheada" más adelante
+                        throw new Error('Error al agregar la Reserva.');
+                    }
+            })
+
+                //Respuesta OK, muestra una alerta informando que el producto se agregó correctamente y limpia los campos del formulario para que puedan ser utilizados para un nuevo producto.
+                .then(function (data) {
+                    swal({
+                        title:'Complejo Alvear Alojamientos - Resistencia',
+                        text: 'Reserva agregada correctamente.',
+                        icon: 'success'
+                    });
+                    //alert('Reserva agregada correctamente.');
+                })
+
+                // En caso de error, mostramos una alerta con un mensaje de error.
+                .catch(function (error) {
+                    swal({
+                        title:'ATENCION',
+                        text: 'ERROR... al agregar la Reserva.',
+                        icon: 'error'
+                    });
+                    //alert('Error al agregar la Reserva.');
+                })
+
+                // Limpiar el formulario en ambos casos (éxito o error)
+                .finally(function () {
+                    document.getElementById('solicitante').value = "";
+                    document.getElementById('email').value = "";
+                    //document.getElementById('tipohabitacion').value = "";
+                    document.getElementById('imagenProducto').value = "";
+                    document.getElementById('telefono').value = "";
+                }
+                );
+        })
+    </script>
+</body>
+
+</html>

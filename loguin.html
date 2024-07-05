@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Img/iconos/menu.png" />
+    <title>Logueo ✐</title>
+    <!-- <script src="./js/loguin.js"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./css/stylesform.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/estilosreservas.css">
+
+</head>
+<body>
+
+    <section id="formulario">
+    <div class="container">
+        <div class="logo-centrado">
+            <img src="./Img/logo.png" alt="logo">
+        </div>
+      <br>
+      <h2 class="poetsen-one-regular"> 〖 Ingrese sus Datos 〗</h2>
+      <br>
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="" style="color: black"> ☺ Usuario:</label>
+            <input type="text" placeholder="✎ Ingrese Usuario" name="usuario" id="usuario">
+        </div>
+        <br>
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="" style="color: black">☻ Contraseña</label>
+            <input type="password" placehoder="Ingrese Contraseña" name="clave" id="clave">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="【 INGREASAR 】" onclick="loguear()">
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+            <!-- <form action="">
+                <h2 class="poetsen-one-regular">HAGA AHORA SU RESERVA</h2>
+        
+                <label for="">Usuario:</label>
+                <input type="text" placeholder="Ingrese Usuario" name="usuario" id="usuario">
+        
+                <label for="">Contraseña</label>
+                <input type="password" placehoder="Ingrese Contraseña" name="clave" id="clave">
+        
+                <input type="button" value="Ingresar" onclick="loguear()">
+            </form> -->
+
+    <script type="text/javascript">
+
+    function loguear()
+    {
+        let user=document.getElementById("usuario").value;
+        let pass=document.getElementById("clave").value;
+
+        if (user=="admin" && pass=="hotel")
+        {
+            window.location="reservas.html";
+        }
+        else
+        {
+            // swal("Datos Incorrectos");
+            swal({
+                title: 'ERROR',
+                text: 'Datos Incorrectos',
+                icon: 'error'
+            })
+        }
+    }
+    </script>
+    
+</body>
+</html>

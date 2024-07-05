@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Img/iconos/house.ico" />
+
+  <!-- fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <!--      -->
+
+  <title>Administracion de Reservas</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/index.js"></script>
+
+  <!-- Animaciones del tecto-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <header class="header1">
+    <nav class="nav1">
+      <a href="" class="logo1 nav1-link">
+        <img src="Img/logo.png" alt="Logo de la empresa" class="logo1" style="width: 110px; height: auto; 
+                    position: relative; /* Establece la posición relativa para permitir ajustes */
+                    top: -27px !important; /* Desplazamiento hacia arriba */
+                    left: -10px !important; /* Desplazamiento hacia la izquierda */" />
+      </a>
+      <img class="nav1-toggle" src="./Img/iconos/application_double.ico" alt=""
+        style="width: auto; height: 10%; /* Tamaño fijo para el ícono de doble aplicación */" />
+      <ul class="nav1-menu nav1-menu_visible">
+        <li class="nav1-menu-item"><img src="./Img/iconos/home.ico" alt=""><a href="index.html"
+            class="nav1-menu-link nav1-link">Inicio</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/group_key.ico" alt=""><a href="Sobre_Nosotros.html"
+            class="nav1-menu-link nav1-link">Sobre Nosotros</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/house.ico" alt=""><a href="habitaciones.html"
+            class="nav1-menu-link nav1-link">Habitaciones</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/user_suit.ico" alt=""><a href="propietarios.html"
+            class="nav1-menu-link nav1-link">Propietarios</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/key_go.ico" alt=""><a href="franquicia.html"
+            class="nav1-menu-link nav1-link">Nueva Franquicia</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/flag_blue.ico" alt=""><a href="sucursales.html"
+            class="nav1-menu-link nav1-link">Sucursales</a></li>
+        <li class="nav1-menu-item"><img src="./Img/iconos/email_edit.ico" alt=""><a href="contacto.html"
+            class="nav1-menu-link nav1-link nav1-menu-link_active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- icono de volver arriba -->
+  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="./Img/volver2.bmp"
+      class="socicon up-arrow" alt="desplazarse-hacia-arriba" /></i>
+
+  <section id="propietarios-heading">
+    <div>
+      <h2 class="poetsen-one-regular">Administracion de Reservas</h2>
+    </div>
+  </section>
+
+  
+  <br>
+  <br>
+  <hr>
+  <h2 class="parpadea">CANCELAR RESERVA</h2>
+  <hr>
+  <br>
+
+  <section class="hero" id="about" style="background-color: lightblue; border-radius: 25PX;">
+    <div>
+      <h1 class=" pacifico-regular">Lea Atentamente antes de realicar su Cancelacion </h1>
+      <p style="text-align: center; padding-left: 15%; padding-right: 15%; font-size: 25;">
+        Las Cancelaciones de las Reservas, solo se podran realizar con aquellas que el husped ha CONFIRMADO.
+      </p>
+      <p style="text-align: center; padding-left: 15%; padding-right: 15%; font-size: 50; font-weight: bold; color:red">
+        IMPORTANTE: Para realizar dicho Tramite se le exigira el Numero de Reserva el cual se le otorgo al momento de
+        la confirnacion de la reserva, y solo se podra realizar la cancelacion 5 DIAS PREVIOS A LA FECHA "DESDE" que se
+        especifico en el formulario de la Reserva.
+      </p>
+    </div>
+    <div>
+      <a href="listadoEliminarreservas.html" class="btn-cancela">CANCELAR</a>
+    </div>
+  </section>
+
+
+  <br>
+  <hr>
+  <h2 class="parpadea">Modificaciones de Reservas</h2>
+  <hr>
+  <br>
+
+  <section class="hero" id="about" style="background-color: lightblue; border-radius: 25PX;">
+    <div>
+      <h1 class=" pacifico-regular">Lea Atentamente antes de realizar un Modificacion </h1>
+      <p style="text-align: center; padding-left: 15%; padding-right: 15%; font-size: 25;">
+        Las Modificaciones de las Reservas, solo se podran realizar con aquellas que el husped ha CONFIRMADO.
+      </p>
+      <p style="text-align: center; padding-left: 15%; padding-right: 15%; font-size: 50; font-weight: bold; color:red">
+        IMPORTANTE: Para realizar dicho Tramite se le exigira el Numero de Reserva el cual se le otorgo al momento de
+        la confirnacion de la reservaa.
+      </p>
+    </div>
+    <div>
+      <a href="modificacionesreservas.html" class="btn-cancela">Modificar</a>
+    </div>
+  </section>
+
+</body>
+
+</html>
