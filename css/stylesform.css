@@ -20,7 +20,7 @@ h2 {
 } 
 
 input[type="text"], input[type="email"], input[type="number"],
-input[type="datetime-local"], 
+input[type="datetime-local"], input[type="password"],
 select {
   width: 100%;
   padding: 10px;
@@ -197,3 +197,5 @@ transition: .1s ease all;
  .formulario__grupo-incorrecto .formulario__input{
   border: 3px solid red;
  } 
+
+ 

@@ -26,7 +26,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     z-index: 9999;
 }
 
@@ -108,7 +108,7 @@ section {
 }
 
 #propietarios-heading h2 {
-    font-size: 28px;
+    font-size: 18px;
     /* Reducimos el tamaño del texto */
     color: white;
     /* Color del texto */
@@ -148,7 +148,8 @@ section {
 }
 
 #ubicacion-heading h2 {
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 18px;
     /* Reducimos el tamaño del texto */
     color: white;
     /* Color del texto */
@@ -180,7 +181,7 @@ section {
 }
 
 #ubicacion-heading1 h2 {
-    font-size: 28px;
+    font-size: 18px;
     /* Reducimos el tamaño del texto */
     color: white;
     /* Color del texto */
@@ -244,7 +245,6 @@ footer {
     border-radius: 0px 0px 90px 90px;
 }
 
-
 footer .social_icon,
 footer .menufooter {
     position: relative;
@@ -262,7 +262,7 @@ footer .menufooter li {
 
 footer .social_icon li a {
     font-size: 2em;
-    color: white;
+    color: black;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -274,13 +274,13 @@ footer .social_icon li a:hover {
 
 footer .menufooter li a {
     font-size: 1.2em;
-    color: white;
-    background: linear-gradient(to right, #000000, #305668, #201d25); /* Gradiente de color */
+    color: black;
+    /* background: linear-gradient(to right, #000000, #305668, #201d25); Gradiente de color */   
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
     transition: 0.5s;
-    border-radius: 20px; /* Redondear los bordes */
+    border-radius: 20px; /*Redondear los bordes */
     padding: 8px 16px; /* Añadir espacio alrededor del texto */
     margin: 8px 8px;
 }
@@ -310,7 +310,7 @@ footer a {
 
 footer p,
 footer img {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -336,7 +336,8 @@ footer img {
 }
 
 #banner h2 {
-    color: red;
+    color: blue;
+    font-size: 30px;
 }
 
 
@@ -615,7 +616,8 @@ img {
 }
 
 .header1 {
-    background: linear-gradient(#0e5f75, #3270c2,#000000); 
+    /* background: linear-gradient(#0e5f75, #3270c2,#000000);  */
+    background: blue;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -636,7 +638,7 @@ img {
     justify-content: space-between;
 
     /* max-width: 1200px; */
-    margin: 50 auto;
+    margin: 10 auto;
 }
 
 .nav1-link {
@@ -660,16 +662,16 @@ img {
 .nav1-menu-item {
     font-size: 15px;
     font-weight: bold;
-    margin: 20 3px;
-    line-height: 80px;
+    margin: 0 1.5px;
+    line-height: 75px;
     text-transform: uppercase;
     width: max-content;
+    
 }
 
 .nav1-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
-
 }
 
 .nav1-menu-link:hover,
@@ -707,7 +709,8 @@ img {
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
-        background: linear-gradient(#0e5f75, #000000, #1f416e,#000000); 
+        background: linear-gradient(#0e5f75, #000000, #1f416e,#000000);  
+        background: blue;
         position: fixed;
         font-size: 10px;
         left: 0;
@@ -855,6 +858,7 @@ img {
     border-radius: 80px;
     color: #fafafe;
     cursor: pointer;
+    /* width: 180px; */
 }
 
 .parpadea {
